@@ -15,7 +15,6 @@ List_linked_list::~List_linked_list()
 // copy constructor
 List_linked_list::List_linked_list(const List_linked_list& source) {
 	// explicit copy constructor necessary because of cards array
-	cards_held = source.cards_held;
 	if (source.head == NULL) return; // nothing to do
 
 	head = new Card_Node;
@@ -46,7 +45,6 @@ List_linked_list List_linked_list::operator =(const List_linked_list&
 	if (this == &source) {
 		return *this;
 	}
-	cards_held = source.cards_held;
 	// delete all current cards
 	while (head != NULL) {
 		Card_Node *next = head->next;
@@ -54,7 +52,6 @@ List_linked_list List_linked_list::operator =(const List_linked_list&
 		head = next;
 	}
 	// copy over all cards from source list
-	cards_held = source.cards_held;
 	if (source.head == NULL) return *this; // nothing to do
 
 	head = new Card_Node;
