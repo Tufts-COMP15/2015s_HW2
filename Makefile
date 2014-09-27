@@ -11,7 +11,7 @@ cards_linked_list: List_linked_list.cpp List_linked_list.h \
 clean:
 	rm -f hw2
 
-make provide:
+provide:
 	provide comp15 hw2 main.cpp List_linked_list.cpp List_linked_list.h \
 	        hand.cpp hand.h card.cpp card.h \
 	        ReadMe.md Makefile
