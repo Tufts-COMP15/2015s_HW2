@@ -9,7 +9,7 @@ public:
 	enum poker_hands {HIGH,PAIR,TWO_PAIR,THREE_KIND,STRAIGHT,FLUSH,
 		FULL_HOUSE,FOUR_KIND,STRAIGHT_FLUSH};
 
-	Hand(); // constructor
+	Hand(); // constructor 
 	~Hand(); // desctructor
 	void order_hand_by_suit();
 	void order_hand_by_rank();
